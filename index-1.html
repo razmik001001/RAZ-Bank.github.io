@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Сюда вписать описание страницы">
+		<meta name="keywords" content="Сюда вписать ключевые слова">
+		<meta name="author" content="Roman">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>RAZ Bank</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	
+	</head>
+
+	<body>
+
+
+  <!-- HEADER -->
+<header>
+<img src="https://i.postimg.cc/Z56k7m9M/IMG-3430.jpg" width="200" 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>RAZ Bank</title>
+    <style>
+        #welcome {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            font-weight: bold;
+            color: #2a2a2a;
+            opacity: 0;
+            animation: fade 6s forwards;
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">Добро пожаловать в RAZ Bank</div>
+
+   
+
+</body>
+</html>
+    
+
+</header>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>RAZ Bank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Верхнее меню */
+    .navbar {
+      background-color: #004080;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px 24px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #0059b3;
+      color: #fff;
+    }
+
+    /* Контент страницы */
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #004080;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Меню навигации -->
+  <div class="navbar">
+    <a href="#">Главная</a>
+    <a href="#">О банке</a>
+    <a href="#">Услуги</a>
+    <a href="#">Кредиты</a>
+    <a href="#">Контакты</a>
+    <a href="#">Вход</a>
+  </div>
+
+  <!-- Основной контент -->
+  <div class="content">
+    <h1>Добро пожаловать в RAZ Bank</h1>
+    <p>Надёжный банк для вашего будущего.</p>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация в RAZ Bank</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .message {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Регистрация в RAZ Bank</h2>
+  <form id="registrationForm">
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirmPassword">Подтвердите пароль:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+
+  <div class="message" id="message"></div>
+</div>
+
+<script>
+  const form = document.getElementById('registrationForm');
+  const messageDiv = document.getElementById('message');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const username = form.username.value;
+    const password = form.password.value;
+    const confirmPassword = form.confirmPassword.value;
+
+    if (password !== confirmPassword) {
+      messageDiv.style.color = 'red';
+      messageDiv.textContent = 'Пароли не совпадают.';
+      return;
+    }
+
+    messageDiv.style.color = 'green';
+    messageDiv.textContent = Вы успешно зарегистрировались в RAZ Bank, ${username}!;
+  });
+</script>
+
+</body>
+</html>
+<meta charset="UTF-8">
+  <title>Заказ карты</title>
+</head>
+<body>
+  <h1>Заказать карту</h1>
+
+  
+  <form id="cardForm">
+    <label for="cardType">Выберите тип карты:</label><br>
+    <select id="cardType" name="cardType" required>
+      <option value="">-- Выберите --</option>
+      <option value="black">Карта Black</option>
+      <option value="credit">Кредитная карта</option>
+      <option value="business">Бизнес-карта</option>
+    </select><br><br>
+
+    <label for="address"> Город и адрес доставки :</label><br>
+    <input type="text" id="address" name="address" placeholder="Введите адрес" required><br><br>
+
+    <button type="submit">Оформить</button>
+  </form>
+
+  <p id="confirmationMessage" style="display:none; color: green; font-weight: bold;"></p>
+
+  <script>
+    document.getElementById('cardForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const cardType = document.getElementById('cardType').value;
+      const address = document.getElementById('address').value;
+
+      if (cardType && address) {
+        document.getElementById('confirmationMessage').innerText =
+          `Спасибо! Ваша ${cardType === 'black' ? 'карта Black' :
+                         cardType === 'credit' ? 'кредитная карта' : 'бизнес-карта'} будет доставлена по адресу "${address}" в течение 2 недель.`;
+        document.getElementById('confirmationMessage').style.display = 'block';
+        document.getElementById('cardForm').reset();
+      }
+    });
+  </script>
+</body>
+</html>
+
+<!-- MAIN -->
+<main>
+<div>
+	<div class="post">
+		<img decoding="async" height="230" 
+		<img src="https://i.postimg.cc/V6ZYT42L/IMG-3501.jpg" width="504" height="506">
+		<div>
+			<h3> в чем разница между кредитной картой и дебетовой?</h3>
+			<p>
+			Кредитная карта использует заёмные средства банка, которые владелец должен вернуть позже с возможными процентами.  
+			Дебетовая карта использует собственные средства владельца.  
+			</p>
+			<a href="#">Подробнее</a>
+		</div>
+	</div>
+	
+		<div class="post">
+		<img decoding="async" height="230" 
+		<img src="https://i.postimg.cc/MHC0x7g1/IMG-3488.jpg" width="504" height="506">
+		<div>
+			<h3> Пополнение и переводы от 0₽ </h3>
+			<p>
+	В приложении банка или личном кабинете:
+- Пополняйте без комиссии с карт других банков
+- Переводите без комиссии на карты других банков через Систему быстрых платежей
+			</p>
+				<a href="#">Подробнее</a>
+		</div>
+	</div>
+
+</div>
+<div class="post">
+		<img decoding="async" height="230" 
+		<img src="https://i.postimg.cc/6qjRZcQk/IMG-3446.jpg" width="504" height="506">
+		<div>
+			<h3>наши дебетовые карты</h3>
+			<p>
+	карта блек
+			</p>
+				<a href="#">Подробнее</a>
+		</div>	
+</div>
+<div class="post">
+		<img decoding="async" height="230" 
+		<img src="https://i.postimg.cc/13Lh9ZyF/IMG-3445.jpg" width="504" height="506">
+		<div>
+			<h3>наши дебетовые карты</h3>
+			<p>
+	карта для кредита
+			</p>
+				<a href="#">Подробнее</a>
+<div>
+<div>
+<div class="post">
+		<img decoding="async" height="230" 
+		<img src="https://i.postimg.cc/28jPCcTt/562-20250517231539.png" width="504" height="506">
+		<div>
+			<h3>наши дебетовые карты</h3>
+			<p>
+	карта бизнес
+			</p>
+				<a href="#">Подробнее</a>
+<div>
+</main>
+<title>Отзывы</title>
+  <style>
+    .review-container {
+      max-width: 600px;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+    .review {
+      border-bottom: 1px solid #ccc;
+      padding: 15px 0;
+    }
+    .stars {
+      color: gold;
+      font-size: 20px;
+    }
+    .review-text {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+</body>
+</html>
+  <div class="review-container">
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <div class="review-text">Отличный продукт! Все соответствует описанию спасибо за карту .</div>
+    </div>
+    <div class="review">
+      <div class="stars">★★★★☆</div>
+      <div class="review-text">Хорошо, но доставка немного задержалась.</div>
+    </div>
+    <div class="review">
+      <div class="stars">★★★☆☆</div>
+      <div class="review-text">Средне. Качество могло быть лучше.</div>
+    </div>
+  </div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Акции и Скидки</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .offers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .offer {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: 280px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .offer h2 {
+      margin-top: 0;
+      color: #007BFF;
+    }
+
+    .offer p {
+      color: #555;
+    }
+
+    .select-two {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .select-two ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .select-two li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Скидки и Акции</h1>
+
+  <div class="offers">
+    <div class="offer">
+      <h2>10% Скидка</h2>
+      <p>На все спортивные принадлежности!</p>
+    </div>
+
+    <div class="offer">
+      <h2>15% Скидка</h2>
+      <p>На проезд в автобусе.</p>
+    </div>
+
+    <div class="offer">
+      <h2>20% Скидка</h2>
+      <p>На покупки в Ozon.ru.</p>
+    </div>
+	    <div class="offer">
+      <h2>20% Скидка</h2>
+      <p> подготовка к 1 сентебрю канцилярии.</p>
+    </div>
+
+
+    <div class="offer">
+      <h2>15% Скидка</h2>
+      <p>Вы можете выбрать 2 вещи из предложенных товаров со скидкой!</p>
+    </div>
+  </div>
+
+  <div class="select-two">
+    <h2>Выберите 2 товара:</h2>
+    <ul>
+      <li><input type="checkbox" name="item" />   рюкзак </li>
+      <li><input type="checkbox" name="item" />   гантели </li>
+      <li><input type="checkbox" name="item" />  велосипед </li>
+      <li><input type="checkbox" name="item" /> Кроссовки </li>
+    </ul>
+    <p>* Можно выбрать не более 2-х товаров</p>
+  </div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Промокод на скидку</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        #promoMessage {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Введите промокод</h2>
+
+<input type="text" id="promoInput" placeholder="Введите промокод">
+<button onclick="checkPromo()">Применить</button>
+
+<div id="promoMessage"></div>
+
+<script>
+    function checkPromo() {
+        const promoInput = document.getElementById("promoInput").value.trim().toUpperCase();
+        const promoMessage = document.getElementById("promoMessage");
+
+        if (promoInput === "RAZ BANK") {
+            promoMessage.style.color = "green";
+            promoMessage.textContent = "20% любого товара активировано";
+        } else {
+            promoMessage.style.color = "red";
+            promoMessage.textContent = "Неверный промокод";
+        }
+    }
+</script>
+
+</body>
+</html>
+</body>
+</html>
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div>
+      <div>
+         <img src="https://i.postimg.cc/Z56k7m9M/IMG-3430.jpg" width="200" 
+      </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>О нас</h3>
+          <p>
+        мы начинающая компания  ЭТО НЕ НАСТОЯЩИЙ БАНК Я ПРОГРАМИСТ Я СОЗДАЮ РАЗНЫЕ САЙТЫ! ВАШИ ДАННЫЕ НИКОМУ НЕ ВИДНО ДАЖЕ ВЛАДЕЛЬЦУ БАНКА!
+          </p>
+		  
+	</div> 
+	<div class ="coment" id="sub-comment
+        <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="reviews">
+       
+        </div>
+		</div>
+        <div class="footer-column">
+          <h3>Свяжитесь с нами</h3>
+          <p>
+             свяжитесь с нами
+            <br><strong>Email: <a href="#">razmikk01@yandex.ru</a></strong>
+          </p>
+          </div>
+      </div>
+    </div>
+    <center>
+      <small>Copyright &copy; 2025</small>
+    </center>
+  </div>
+</footer>
+  
+  	</body>
+
+</html>
